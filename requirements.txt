@@ -10,7 +10,10 @@ mmcm @ git+https://github.com/TMElyralab/MMCM.git@setup
 # torch==2.0.1  --index-url https://download.pytorch.org/whl/cu118 
 # torchvision==0.15.2  --index-url https://download.pytorch.org/whl/cu118 
 # torchaudio==2.0.2  --index-url https://download.pytorch.org/whl/cu118 
-torch
+# pip install torch torchvision torchaudio -i https://pypi.tuna.tsinghua.edu.cn/simple --extra-index-url https://download.pytorch.org/whl/cu118
+
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# pip install torch torchvision torchaudio --index-url https://mirror.sjtu.edu.cn/pytorch-wheels/cu118
 torchvision
 torchaudio
 ninja==1.11.1 
@@ -93,5 +96,5 @@ xlsxwriter
 cuid
 spaces
 # https://mirrors.cloud.tencent.com/pypi/packages/de/a6/a49d5af79a515f5c9552a26b2078d839c40fcf8dccc0d94a1269276ab181/tb_nightly-2.1.0a20191022-py3-none-any.whl
-basicsr
+# basicsr
 # numpy==1.23.5
