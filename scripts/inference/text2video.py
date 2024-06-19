@@ -1224,10 +1224,10 @@ for model_name, sd_model_params in sd_model_params_dict.items():
 
             timestamp = int(datetime.datetime.now().timestamp())
             string_timestamp = str(timestamp)
-            
+            save_file_name = clean_str_for_save(save_file_name)
+
             save_file_name = string_timestamp
 
-            save_file_name = clean_str_for_save(save_file_name)
             output_path = os.path.join(
                 output_dir,
                 f"{save_file_name}.{save_filetype}",
