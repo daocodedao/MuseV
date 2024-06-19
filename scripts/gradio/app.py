@@ -9,6 +9,10 @@ import numpy as np
 
 from huggingface_hub import snapshot_download
 
+
+os.environ['HTTP_PROXY'] = "192.168.0.77:18808"
+os.environ['HTTPS_PROXY'] = "192.168.0.77:18808"
+
 ProjectDir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 CheckpointsDir = os.path.join(ProjectDir, "checkpoints")
 ignore_video2video = False
