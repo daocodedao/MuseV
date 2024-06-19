@@ -16,6 +16,10 @@ import cv2
 from PIL import Image
 from diffusers.models.autoencoder_kl import AutoencoderKL
 
+# import 路径修改
+import sys,os
+sys.path.append(os.path.join(os.path.dirname(__file__), "../../"))
+
 from mmcm.utils.load_util import load_pyhon_obj
 from mmcm.utils.seed_util import set_all_seed
 from mmcm.utils.signature import get_signature_of_string
