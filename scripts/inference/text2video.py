@@ -6,6 +6,7 @@ import logging
 from collections import OrderedDict
 from pprint import pprint
 import random
+import time,datetime,json,os,sys
 
 import numpy as np
 from omegaconf import OmegaConf, SCMode
@@ -1220,6 +1221,11 @@ for model_name, sd_model_params in sd_model_params_dict.items():
                 f"_w={test_data_w_ind_noise}_{test_data_video_negative_prompt_name}"
                 f"_r={test_data_refer_image_name[:3]}_ip={test_data_refer_image_name[:3]}_f={test_data_refer_face_image_name[:3]}"
             )
+
+            timestamp = int(datetime.datetime.now().timestamp())
+            string_timestamp = str(timestamp)
+            
+            save_file_name = string_timestamp
 
             save_file_name = clean_str_for_save(save_file_name)
             output_path = os.path.join(

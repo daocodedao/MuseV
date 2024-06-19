@@ -414,7 +414,7 @@ python scripts/inference/video2video.py --sd_model_name majicmixRealv6Fp16  --un
 仅有动作模块，没有 referencenet，需要更少的 GPU 内存。
 #### 文本到视频
 ```bash
-python scripts/inference/text2video.py   --sd_model_name majicmixRealv6Fp16   --unet_model_name musev   -test_data_path ./configs/tasks/example.yaml  --output_dir ./output  --n_batch 1  --target_datas yongen  --time_size 12 --fps 12
+python scripts/inference/text2video.py   --sd_model_name majicmixRealv6Fp16   --unet_model_name musev   -test_data_path ./configs/tasks/example.yaml  --output_dir /data3/work/musev  --n_batch 1  --target_datas yongen  --time_size 12 --fps 12
 ```
 #### 视频到视频
 ```bash
